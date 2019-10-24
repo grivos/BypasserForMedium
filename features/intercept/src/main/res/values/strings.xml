@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_loading_page">Error loading page</string>
+    <string name="premium_article_detected">Premium article detected!</string>
+    <string name="non_premium_article_detected">Non premium article detected</string>
+</resources>

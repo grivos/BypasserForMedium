@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intro">Welcome to <annotation format="bold">Bypasser for Medium</annotation>.\nThis app intercepts Medium articles, and opens premium content (articles that have a <annotation drawable="@drawable/ic_star">star</annotation>) in an internal browser, so you won\'t get blocked.\n\nNon premium articles will be open with:</string>
+    <string name="intro_no_fallback">Welcome to <annotation format="bold">Bypasser for Medium</annotation>.\nThis app intercepts Medium articles, and opens premium content (articles that have a <annotation drawable="@drawable/ic_star">star</annotation>) in an internal browser, so you won\'t get blocked.</string>
+    <string name="change_fallback">Change App</string>
+    <string name="choose_fallback_app">Choose fallback app…</string>
+    <string name="description_app_logo">App logo</string>
+    <string name="description_bypasser_app_logo">Bypasser app logo</string>
+    <string name="description_fallback_app_logo">Fallback app logo</string>
+</resources>

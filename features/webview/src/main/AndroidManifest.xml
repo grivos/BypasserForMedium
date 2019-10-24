@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.grivos.bypasser.webview">
+
+    <application tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".presentation.WebViewActivity" />
+    </application>
+
+</manifest>

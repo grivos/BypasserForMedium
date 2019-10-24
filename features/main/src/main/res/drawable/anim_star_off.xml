@@ -1,0 +1,49 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="star_off"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:name="strikethrough_path"
+                android:fillColor="@color/mediumStar"
+                android:pathData="M 2 4.27 L 3.27 3 L 3.27 3 L 2 4.27 Z"
+                android:strokeWidth="1" />
+            <clip-path
+                android:name="strikethrough_mask"
+                android:pathData="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z M 4.54 1.73 L 3.27 3 L 3.27 3 L 4.54 1.73 Z" />
+            <path
+                android:name="star"
+                android:fillColor="@color/mediumStar"
+                android:pathData="M 12 17.27 L 18.18 21 L 16.54 13.97 L 22 9.24 L 14.81 8.62 L 12 2 L 9.19 8.62 L 2 9.24 L 7.45 13.97 L 5.82 21 L 12 17.27 Z"
+                android:strokeWidth="1" />
+        </vector>
+    </aapt:attr>
+    <target android:name="strikethrough_path">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="2000"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="pathData"
+                android:startOffset="300"
+                android:valueFrom="M 2 4.27 L 3.27 3 L 3.27 3 L 2 4.27 Z"
+                android:valueTo="M 19.73 22 L 21 20.73 L 3.27 3 L 2 4.27 Z"
+                android:valueType="pathType" />
+        </aapt:attr>
+    </target>
+    <target android:name="strikethrough_mask">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="2000"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="pathData"
+                android:startOffset="300"
+                android:valueFrom="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z M 4.54 1.73 L 3.27 3 L 3.27 3 L 4.54 1.73 Z"
+                android:valueTo="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z M 4.54 1.73 L 3.27 3 L 21 20.73 L 22.27 19.46 Z"
+                android:valueType="pathType" />
+        </aapt:attr>
+    </target>
+</animated-vector>

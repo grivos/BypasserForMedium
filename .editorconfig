@@ -1,0 +1,3 @@
+[*.{kt,kts}]
+# noinspection EditorConfigKeyCorrectness
+disabled_rules=no-wildcard-imports

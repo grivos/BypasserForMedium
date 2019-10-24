@@ -1,0 +1,78 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.grivos.bypasser.intercept">
+
+    <application tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".presentation.InterceptActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/AppThemeTranslucent">
+            <intent-filter>
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="medium.com"
+                    android:scheme="https" />
+
+                <data
+                    android:host="medium.engineering"
+                    android:scheme="https" />
+
+                <data
+                    android:host="robinhood.engineering"
+                    android:scheme="https" />
+
+                <data
+                    android:host="proandroiddev.com"
+                    android:scheme="https" />
+
+                <data
+                    android:host="tech.flipkart.com"
+                    android:scheme="https" />
+
+                <data
+                    android:host="android.jlelse.eu"
+                    android:scheme="https" />
+
+                <data
+                    android:host="instagram-engineering.com"
+                    android:scheme="https" />
+
+                <data
+                    android:host="blog.kotlin-academy.com"
+                    android:scheme="https" />
+
+                <data
+                    android:host="kickstarter.engineering"
+                    android:scheme="https" />
+
+                <data
+                    android:host="blog.getnexar.com"
+                    android:scheme="https" />
+
+                <data
+                    android:host="sourcediving.com"
+                    android:scheme="https" />
+
+                <data
+                    android:host="slack.engineering"
+                    android:scheme="https" />
+
+                <data
+                    android:host="engineering.hellofresh.com"
+                    android:scheme="https" />
+
+                <data
+                    android:host="eng.lyft.com"
+                    android:scheme="https" />
+
+            </intent-filter>
+
+        </activity>
+    </application>
+</manifest>

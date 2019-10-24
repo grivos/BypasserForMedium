@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion Versions.compileSdk
+    defaultConfig {
+        applicationId ApplicationId.id
+        minSdkVersion Versions.minSdk
+        targetSdkVersion Versions.targetSdk
+        versionCode Releases.versionCode
+        versionName Releases.versionName
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+    implementation project(Modules.cache)
+    implementation project(Modules.navigation)
+    implementation project(Modules.presentation)
+    implementation project(Modules.intercept)
+    implementation project(Modules.fallback)
+    implementation project(Modules.main)
+    implementation project(Modules.webview)
+
+    implementation Libraries.kotlin
+
+    implementation SupportLibraries.design
+    implementation SupportLibraries.cardview
+    implementation SupportLibraries.appcompat
+    implementation SupportLibraries.recyclerview
+
+    implementation Libraries.koinAndroid
+
+    implementation Libraries.lifecycleExtensions
+
+    implementation Libraries.rxjava
+    implementation Libraries.rxkotlin
+
+    implementation Libraries.loggingInterceptor
+
+    implementation Libraries.timber
+
+    implementation Libraries.viewPump
+    implementation Libraries.spanomatic
+
+    debugImplementation Libraries.leakCanaryAndroid
+}
