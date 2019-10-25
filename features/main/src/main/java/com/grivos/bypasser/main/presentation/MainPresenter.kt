@@ -7,6 +7,7 @@ import com.grivos.fallback.domain.model.MediumFallbackApp
 import com.grivos.presentation.BasePresenter
 import com.grivos.presentation.MvpView
 import io.reactivex.Completable
+import io.reactivex.android.schedulers.AndroidSchedulers
 import java.util.concurrent.TimeUnit
 
 interface MainView : MvpView {
@@ -29,6 +30,7 @@ class MainPresenter(
         }
         launch {
             Completable.timer(1, TimeUnit.SECONDS)
+                .observeOn(AndroidSchedulers.mainThread())
                 .subscribe { this.mvpView?.animateLogo() }
         }
     }
