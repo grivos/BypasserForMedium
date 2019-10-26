@@ -20,6 +20,10 @@
                     android:scheme="https" />
 
                 <data
+                    android:host="link.medium.com"
+                    android:scheme="https" />
+
+                <data
                     android:host="medium.engineering"
                     android:scheme="https" />
 

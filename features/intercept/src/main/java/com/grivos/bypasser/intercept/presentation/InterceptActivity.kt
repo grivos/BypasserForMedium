@@ -19,7 +19,7 @@ class InterceptActivity : BaseActivity(), InterceptView {
     private val url by lazy {
         val raw = intent.dataString ?: throw IllegalArgumentException("Uri can't be null")
         val uri = Uri.parse(raw)
-        if (uri.host == "medium.com") {
+        if (uri.host.contains("medium.com")) {
             raw
         } else {
             // We add the 'medium.com' host to custom domain uris to avoid infinite loops

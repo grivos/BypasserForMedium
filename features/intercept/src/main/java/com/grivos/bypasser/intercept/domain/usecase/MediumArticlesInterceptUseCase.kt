@@ -14,10 +14,9 @@ class MediumArticlesInterceptUseCase(
 
     fun getInterceptResult(url: String): Single<MediumInterceptionResult> {
         return repository.getMediumArticle(url)
-            .map { it.isPremium }
-            .flatMap { isPremium ->
-                if (isPremium) {
-                    Single.just(MediumInterceptionResultPremium)
+            .flatMap { article ->
+                if (article.isPremium) {
+                    Single.just(MediumInterceptionResultPremium(article.url))
                 } else {
                     mediumFallbackHandler.getFallbackApp()
                         .firstOrError()

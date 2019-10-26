@@ -35,9 +35,9 @@ class InterceptPresenter(
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({ interceptResult ->
                     when (interceptResult) {
-                        MediumInterceptionResultPremium -> {
+                        is MediumInterceptionResultPremium -> {
                             this.mvpView?.showToast(R.string.premium_article_detected)
-                            this.mvpView?.openInternally(url)
+                            this.mvpView?.openInternally(interceptResult.url)
                         }
                         is MediumInterceptionResultNotPremium -> {
                             when (val fallbackApp = interceptResult.fallbackApp) {
