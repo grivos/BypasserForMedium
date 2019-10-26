@@ -3,7 +3,7 @@
 <h4 align="center">An Android app that intercepts Medium articles, and opens them internally if they're premium.</h4>
 
 ## Download
-You can download the APK file [here](https://github.com/grivos/BypasserForMedium/releases/download/v1.0.1/bypasser_v1.0.1.apk).
+You can download the APK file [here](https://github.com/grivos/BypasserForMedium/releases/download/v1.0.2/bypasser_v1.0.2.apk).
 
 ## Screenshots
 <p align="center"><img src="assets/screenshot_01.png" width="250"></p>
